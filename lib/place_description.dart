@@ -57,6 +57,7 @@ class PlaceDescription extends StatelessWidget
 				place_name,
 				style: TextStyle
 				(
+					fontFamily: "Gotham",
 					fontSize: 28.0,
 					fontWeight: FontWeight.bold
 				),
@@ -100,6 +101,7 @@ class PlaceDescription extends StatelessWidget
 				place_description,
 				style: TextStyle
 				(
+					fontFamily: "Gotham",
 					fontSize: 16.0,
 					fontWeight: FontWeight.normal
 				),
