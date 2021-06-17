@@ -18,7 +18,7 @@ class PlaceDescription extends StatelessWidget
 		final title = Container
 		(
 			margin: EdgeInsets.only(
-				top: 40.0,
+				top: 310.0,
 				left: 40.0,
 				right: 40.0
 			),
