@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'stars.dart';
 
 class PlaceDescription extends StatelessWidget
 {
@@ -13,36 +14,6 @@ class PlaceDescription extends StatelessWidget
 	@override
 	Widget build(BuildContext context)
 	{
-		// Ícono de estrella completa //
-		final star_complete = Container
-		(
-			child: Icon
-			(
-				Icons.star,
-				color: Color(0xFFF2C611)
-			)
-		);
-
-		// Ícono de estrella a la mitad //
-		final star_half = Container
-		(
-			child: Icon
-			(
-				Icons.star_half,
-				color: Color(0xFFF2C611)
-			)
-		);
-
-		// Ícono de estrella completa //
-		final star_border = Container
-		(
-			child: Icon
-			(
-				Icons.star_border,
-				color: Color(0xFFF2C611)
-			)
-		);
-
 		// Título del lugar //
 		final title = Container
 		(
@@ -65,28 +36,6 @@ class PlaceDescription extends StatelessWidget
 			)
 		);
 
-		// Conjunto de estrellas //
-		final stars = Container
-		(
-			margin: EdgeInsets.only(
-				top: 20.0,
-				left: 40.0,
-				right: 40.0
-			),
-
-			child: Row
-			(
-				children:
-				[
-					star_complete,
-					star_complete,
-					star_complete,
-					star_complete,
-					star_half
-				]
-			)
-		);
-
 		// Descripción del lugar //
 		final description = Container
 		(
@@ -102,8 +51,9 @@ class PlaceDescription extends StatelessWidget
 				style: TextStyle
 				(
 					fontFamily: "Gotham",
-					fontSize: 16.0,
-					fontWeight: FontWeight.normal
+					fontSize: 14.8,
+          height: 1.34,
+					fontWeight: FontWeight.normal,
 				),
 				textAlign: TextAlign.left
 			)	
@@ -116,9 +66,16 @@ class PlaceDescription extends StatelessWidget
 			children:
 			[
 				title,
-				stars,
+				Container
+        (
+          margin: EdgeInsets.only(
+				    top: 10.0
+			    ),
+          
+          child: Stars(place_stars, 30.0)
+        ),
 				description
-			],
+			]
 		);
 	}
 }

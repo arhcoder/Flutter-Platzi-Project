@@ -75,6 +75,12 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   
+  assets:
+    - assets/images/user-arhcoder.png
+    - assets/images/user-luisillo.png
+    - assets/images/user-anncode.png
+    - assets/images/user-freddier.png
+
   fonts:
     - family: Gotham
       fonts:
