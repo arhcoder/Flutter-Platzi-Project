@@ -21,8 +21,8 @@ class GradientAppBar extends StatelessWidget
 				(
 					colors:
 					[
-						Color(0xFF8068D3),
-						Color(0xFF584CD1)
+                        Color(0xFF584CD1),
+						Color(0xFF8068D3)
 					],
 					begin: FractionalOffset(0.2, 0.0),
 					end: FractionalOffset(1.0, 0.6),

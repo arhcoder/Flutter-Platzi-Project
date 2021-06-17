@@ -12,12 +12,32 @@ class ReviewList extends StatelessWidget
 
 			children:
 			[
+                Container
+                (
+                    margin: EdgeInsets.only(
+                        top: 20.0,
+                        left: 40.0
+                    ),
+
+                    child: Text
+                    (
+                        "Reseñas",
+                        textAlign: TextAlign.left,
+                        style: TextStyle
+                        (
+                            fontFamily: "Gotham",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20.0
+                        )
+                    )
+                ),
+
 				Review
 				(
 					"assets/images/user-arhcoder.png",
 					"arhcoder",
 					5.0,
-					"8 Reviews",
+					"8 Reseñas",
 					"Excelente ciudad."
 				),
 				Review
@@ -25,7 +45,7 @@ class ReviewList extends StatelessWidget
 					"assets/images/user-anncode.png",
 					"anncode",
 					4.5,
-					"4 Reviews",
+					"4 Reseñas",
 					"Bonita ciudad. Mucho calor."
 				),
 				Review
@@ -33,7 +53,7 @@ class ReviewList extends StatelessWidget
 					"assets/images/user-luisillo.png",
 					"luisillo",
 					5.0,
-					"12 Reviews",
+					"12 Reseñas",
 					"Una ciudad muy cool."
 				),
 				Review
@@ -41,7 +61,7 @@ class ReviewList extends StatelessWidget
 					"assets/images/user-freddier.png",
 					"freddier",
 					4.0,
-					"3 Reviews",
+					"3 Reseñas",
 					"Muchos zancudos. Buen destino."
 				)
 			]

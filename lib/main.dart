@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'header.dart';
 import 'place_description.dart';
 import 'review_list.dart';
 
+// @arhcoder //
+
 void main()
 {
+    // Se hace transparente la barra superior de Android //
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle
+        (
+            statusBarColor: Colors.transparent,
+            statusBarBrightness: Brightness.light
+        )
+    );
 	runApp(MyApp());
 }
 
@@ -15,6 +26,8 @@ class MyApp extends StatelessWidget
 	{
 		return MaterialApp
 		(
+            debugShowCheckedModeBanner: false,
+
 			title: 'Places Trial',
 
 			theme: ThemeData
@@ -33,17 +46,19 @@ class MyApp extends StatelessWidget
 						(
 							children:
 							[
+
 								PlaceDescription
 								(
 									"Aguascalientes",
-									"Tierra de la gente buena. Conocida por los edificios coloniales españoles de su centro histórico. En la Plaza Patria se ubica la Catedral de Nuestra Señora de la Asunción, con pinturas del siglo XVIII de Miguel Cabrera. El Palacio de Gobierno del siglo XVII es conocido por sus numerosos arcos interiores tallados. El Museo Nacional de la Muerte exhibe arte funerario y artefactos desde la época precolombina hasta la actualidad.",
+									"Tierra de la gente buena. Desde vivir la gran Feria de San Marcos, descubrir su centro histórico colonial con su hermosa catedral, disfrutar de las exposiciones, parques y fuentes del Museo de La muerte, hasta dar un paseo por sus hermosos Pueblos Mágicos. Un destino lleno de cultura cononial y de calaveras.",
 									4.5
 								),
 
 								Container
 								(
 									margin: EdgeInsets.only(
-										top: 20.0
+										top: 20.0,
+                                        bottom: 28.0
 									),
 									child: ReviewList()
 								)

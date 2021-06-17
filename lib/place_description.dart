@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'button_rounded.dart';
 import 'stars.dart';
 
 class PlaceDescription extends StatelessWidget
@@ -18,7 +19,7 @@ class PlaceDescription extends StatelessWidget
 		final title = Container
 		(
 			margin: EdgeInsets.only(
-				top: 310.0,
+				top: 312.0,
 				left: 40.0,
 				right: 40.0
 			),
@@ -29,7 +30,7 @@ class PlaceDescription extends StatelessWidget
 				style: TextStyle
 				(
 					fontFamily: "Gotham",
-					fontSize: 28.0,
+					fontSize: 26.0,
 					fontWeight: FontWeight.bold
 				),
 				textAlign: TextAlign.left
@@ -40,7 +41,7 @@ class PlaceDescription extends StatelessWidget
 		final description = Container
 		(
 			margin: EdgeInsets.only(
-				top: 20.0,
+				top: 10.0,
 				left: 40.0,
 				right: 40.0
 			),
@@ -51,8 +52,8 @@ class PlaceDescription extends StatelessWidget
 				style: TextStyle
 				(
 					fontFamily: "Gotham",
-					fontSize: 14.8,
-          height: 1.34,
+					fontSize: 14,
+                    height: 1.34,
 					fontWeight: FontWeight.normal,
 				),
 				textAlign: TextAlign.left
@@ -67,14 +68,15 @@ class PlaceDescription extends StatelessWidget
 			[
 				title,
 				Container
-        (
-          margin: EdgeInsets.only(
-				    top: 10.0
-			    ),
+                (
+                    margin: EdgeInsets.only(
+                        top: 10.0
+                    ),
           
-          child: Stars(place_stars, 30.0)
-        ),
-				description
+                    child: Stars(place_stars, 26.0)
+                ),
+				description,
+                ButtonRounded("Visitar")
 			]
 		);
 	}

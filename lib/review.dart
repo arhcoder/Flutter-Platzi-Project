@@ -22,7 +22,7 @@ class Review extends StatelessWidget
 			height: 60.0,
 
 			margin: EdgeInsets.only(
-				top: 20.0,
+				top: 28.0,
 				left: 40.0
 			),
 
@@ -40,7 +40,7 @@ class Review extends StatelessWidget
 		final user_name = Container
 		(
 			margin: EdgeInsets.only(
-				top: 10.0,
+				top: 18.0,
 				left: 20.0
 			),
 			child: Text
@@ -123,7 +123,7 @@ class Review extends StatelessWidget
 			children:
 			[
 				photo,
-				user_information
+				user_information,
 			]
 		);
 	}

@@ -20,9 +20,17 @@ class PlacePhotosCarousel extends StatelessWidget
 					PlacePhoto("assets/images/Aguascalientes-01.png"),
 					PlacePhoto("assets/images/Aguascalientes-02.png"),
 					PlacePhoto("assets/images/Aguascalientes-03.png"),
-					PlacePhoto("assets/images/Aguascalientes-04.png")
+					PlacePhoto("assets/images/Aguascalientes-04.png"),
+					PlacePhoto("assets/images/Aguascalientes-05.png"),
+					PlacePhoto("assets/images/Aguascalientes-06.png"),
+					PlacePhoto("assets/images/Aguascalientes-07.png"),
+					PlacePhoto("assets/images/Aguascalientes-08.png"),
+					PlacePhoto("assets/images/Aguascalientes-09.png"),
+					PlacePhoto("assets/images/Aguascalientes-10.png"),
+					PlacePhoto("assets/images/Aguascalientes-11.png"),
+					PlacePhoto("assets/images/Aguascalientes-12.png"),
 				]
 			)
-		);
+        );
 	}
 }
