@@ -23,7 +23,7 @@ class ButtonRounded extends StatelessWidget
 
             decoration: BoxDecoration
             (
-                borderRadius: BorderRadius.circular(30.0),
+                borderRadius: BorderRadius.circular(24.0),
                 gradient: LinearGradient
 				(
 					colors:
