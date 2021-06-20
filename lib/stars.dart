@@ -49,7 +49,7 @@ class Stars extends StatelessWidget
 		return Container
 		(
 			margin: EdgeInsets.only(
-				left: 40.0,
+				left: 30.0,
 			),
 
 			child: Row

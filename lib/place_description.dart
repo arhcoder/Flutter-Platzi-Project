@@ -20,8 +20,8 @@ class PlaceDescription extends StatelessWidget
 		(
 			margin: EdgeInsets.only(
 				top: 311.8,
-				left: 40.0,
-				right: 40.0
+				left: 30.0,
+				right: 30.0
 			),
 
 			child: Text
@@ -42,8 +42,8 @@ class PlaceDescription extends StatelessWidget
 		(
 			margin: EdgeInsets.only(
 				top: 10.0,
-				left: 40.0,
-				right: 40.0
+				left: 30.0,
+				right: 30.0
 			),
 
 			child: Text
@@ -52,7 +52,7 @@ class PlaceDescription extends StatelessWidget
 				style: TextStyle
 				(
 					fontFamily: "Gotham",
-					fontSize: 14,
+					fontSize: 11.88,
                     height: 1.34,
 					fontWeight: FontWeight.normal,
 				),

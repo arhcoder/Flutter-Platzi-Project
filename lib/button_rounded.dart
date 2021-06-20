@@ -18,7 +18,7 @@ class ButtonRounded extends StatelessWidget
 
             margin: EdgeInsets.only(
                 top: 20.0,
-                left: 40.0
+                left: 30.0
             ),
 
             decoration: BoxDecoration
@@ -64,13 +64,15 @@ class ButtonRounded extends StatelessWidget
                     (
                         onTap: ()
                         {
+                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                            
                             ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar
                                 (
                                     content: Text
                                     (
                                         "Viajando..."
-                                    ),
+                                    )
                                 )
                             );
                         }

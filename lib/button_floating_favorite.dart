@@ -69,7 +69,7 @@ class ButtonFloatingFavorite_State extends State <ButtonFloatingFavorite>
             child: Icon
             (
                 button_icon
-            ),
+            )
         );
     }
 }

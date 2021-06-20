@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'gradient_appbar.dart';
+import 'gradient_app_bar.dart';
 import 'place_photos_carousel.dart';
 
 class Header extends StatelessWidget
